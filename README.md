@@ -12,6 +12,8 @@ Internet of Things and Big Data Analysis
 Raspberry Pi 4 *1
 Jumper wires
 breadboard
+LCD Display *1
+DHT22 *1
 ```
 ## Software
 ```
@@ -23,6 +25,13 @@ azure-iot-device-2.12.0
 deprecation-2.1.0 
 janus-1.0.0 
 paho-mqtt-1.6.1
+teams_logger
+board
+adafruit_dht
+subprocess
+adafruit_ssd1306
+PIL
+azure-iot-device
 ```
 ## Try 1： [Raspberry Pi4 安裝pyspark 心得](https://github.com/RalphLiang/ncu-imgt-iot-hw2023/blob/master/spark_install.md)
 
@@ -72,10 +81,23 @@ Step5: 推送 monitor event 到 Azure
 Step6: Azure IoT Hub 開始遙測收集
 ![image](https://user-images.githubusercontent.com/47648250/211617221-545a3ab7-3983-45cd-bf09-a8dcdaa78d51.png)
 
----
-# 程式碼部分
-## [結合溫溼度/LCD顯示](https://github.com/RalphLiang/Adafruit_Python_SSD1306) 
-## [整合Azure IoT Hub](https://github.com/RalphLiang/azure-iot-sdk-python)
+Step7: 通知使用者
 
-#[操作影片](https://drive.google.com/file/d/1cZ8wN2L1ZRrBtWlk0n_6CHMhKaV-o6YX/view?usp=sharing)
+![image](https://user-images.githubusercontent.com/47648250/211783613-cb10ed38-7bd1-4dca-8bdd-04646478fe8d.png)
+
+---
+
+# 程式碼部分
+## [結合溫溼度](https://github.com/RalphLiang/Adafruit_Python_SSD1306/blob/master/examples/stats2.py)
+## [LCD顯示](https://github.com/RalphLiang/Adafruit_Python_SSD1306/blob/master/examples/dht22.py) 
+## [MSTeams通知](https://github.com/RalphLiang/Adafruit_Python_SSD1306/blob/master/examples/Team-Notification-IoT.py)
+## [整合Azure IoT Hub](https://github.com/RalphLiang/azure-iot-sdk-python/blob/master/samples/pnp/ncu_controller_with_thermostats.py)
+
+# 設備接線
+![image](https://user-images.githubusercontent.com/47648250/211786362-8c61aa5d-2893-4257-b0d5-786a948a8ede.png)
+![image](https://user-images.githubusercontent.com/47648250/211786231-08cfbea8-0371-4248-9d2b-4426ff31110b.png)
+
+---
+
+# [操作影片](https://drive.google.com/file/d/1cZ8wN2L1ZRrBtWlk0n_6CHMhKaV-o6YX/view?usp=sharing)
 
