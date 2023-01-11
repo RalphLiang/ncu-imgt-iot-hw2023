@@ -4,7 +4,11 @@ Internet of Things and Big Data Analysis
 ---
 # Getting Started
 
-學生一開始發想希望能運用 raspberry pi4 在物聯網上，並結合上 Home Assistant 這個 open source framework，收集各種資料送上雲端，並能使用上 rasberry pi4 的諸多電子套件，譬如：Intel NCS2 神經棒，在領論與實作過程中有甘苦，當然也就有很多收穫及挫折。依序將諸多嘗試過程及處理方案說明如下：
+學生一開始發想希望能運用 raspberry pi4 在物聯網上，並結合上 Home Assistant 這個 open source framework，收集各種遙測資料 (ex: 溫溼度)，後續送上 Azure IoT 雲端，並能使用上 rasberry pi4 的諸多電子套件，譬如：Intel NCS2 神經棒。本來是希望在物聯網時代，能做到及時收集、及時處理跟即時通知，所以陸續碰了 pysaprk、azure IoT Hub、Home Assistant 、MS Teams 以及 IoT 電路應用。
+
+希望做到讓系統在超越警戒線，透過 Microsoft Teams 發出 Alerting，學生在這期末報告部分，主要平台是使用 Ubuntu 20.04 64 bit OS，因為花滿多時間在測試python 套件版本之間的相容性問題，只來得及完成 POC驗證，證明實際上是可行的。
+
+經歷理論與實作的相互印證，過程中有許多甘苦，當然也就有很多收穫及挫折。依序將諸多嘗試過程及處理方案說明如下：
 
 # Components
 ## Hardward
@@ -17,7 +21,9 @@ DHT22 *1
 ```
 ## Software
 ```
+Ubuntun 20.04 64 bit OS
 Python 3.8
+pyspark
 OpenVino
 Open-model-Zoo
 PySocks-1.7.1 
@@ -104,3 +110,5 @@ Step7: 通知使用者
 
 # [操作影片](https://drive.google.com/file/d/1cZ8wN2L1ZRrBtWlk0n_6CHMhKaV-o6YX/view?usp=sharing)
 
+# References
+放置於 各實作文件內
