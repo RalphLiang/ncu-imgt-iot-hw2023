@@ -93,6 +93,9 @@ Step7: 通知使用者
 ## [MSTeams通知](https://github.com/RalphLiang/Adafruit_Python_SSD1306/blob/master/examples/Team-Notification-IoT.py)
 ## [整合Azure IoT Hub](https://github.com/RalphLiang/azure-iot-sdk-python/blob/master/samples/pnp/ncu_controller_with_thermostats.py)
 
+# 電路圖
+![image](https://user-images.githubusercontent.com/47648250/211792711-76582cef-eade-4a2e-8460-0df964456f18.png)
+
 # 設備接線
 ![image](https://user-images.githubusercontent.com/47648250/211786362-8c61aa5d-2893-4257-b0d5-786a948a8ede.png)
 ![image](https://user-images.githubusercontent.com/47648250/211786231-08cfbea8-0371-4248-9d2b-4426ff31110b.png)
